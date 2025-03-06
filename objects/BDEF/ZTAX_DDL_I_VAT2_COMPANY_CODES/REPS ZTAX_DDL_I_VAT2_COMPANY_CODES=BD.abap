@@ -13,13 +13,11 @@ authorization master ( instance )
   field ( readonly : update ) CompanyCode;
   //  association _Header { create; }
 
-
   mapping for ztax_t_k2s
     {
       CompanyCode = bukrs;
       CompanyName = CompanyName;
     }
-
 }
 
 define behavior for ZTAX_DDL_I_VAT2_HEADER //alias _Header

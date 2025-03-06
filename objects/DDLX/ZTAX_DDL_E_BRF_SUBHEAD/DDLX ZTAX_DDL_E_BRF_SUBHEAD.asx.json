@@ -7,9 +7,9 @@
     "DDLXNAME":"ZTAX_DDL_E_BRF_SUBHEAD",
     "VERSION":"A",
     "CHANGED_BY":"SAP_CUSTOMER",
-    "CHANGED_ON":"2024-10-01",
-    "CHANGED_AT":"08:02:46",
-    "UUID":"076F643A4AD31EEF9FF971555FD6E1F2",
+    "CHANGED_ON":"2025-03-05",
+    "CHANGED_AT":"10:56:06",
+    "UUID":"41DA9F4B20AC1EEFBEB60DEEB7D7C3C9",
     "ABAP_LANGUAGE_VERSION":"5"
    }
   ]
@@ -34,7 +34,7 @@
     "DDLXNAME":"ZTAX_DDL_E_BRF_SUBHEAD",
     "VERSION":"A",
     "UUID":"",
-    "SOURCE":"@Metadata.layer: #CORE\r\n//@Search.searchable: true\r\n@UI:{\r\nheaderInfo:{\r\n                typeNamePlural: 'Alt Başlık',\r\n                typeName: 'Alt Başlık',\r\n                title:{ type: #STANDARD, label: 'Alt Başlık', value: 'Refrection1' }\r\n           }\r\n}\r\nannotate entity ZTAX_DDL_P_BRF_SUBHEAD with\r\n{\r\n  @UI.facet: [ { id:              'SubHead',\r\n                 purpose:         #STANDARD,\r\n                 type:            #IDENTIFICATION_REFERENCE,\r\n                 label:           'Başlık Bilgileri',\r\n                 position:        10 },\r\n\r\n               { id:              'Fieldgroup1-ID',\r\n                 purpose:         #STANDARD,\r\n                 position:        20 ,\r\n                 label:           'Düğüm',\r\n                 type:            #LINEITEM_REFERENCE,\r\n                 parentId:        'SubHead',\r\n                 targetQualifier: 'Fieldgroup1',\r\n                 targetElement:   '_Node' }\r\n                ]\r\n\r\n  @UI: { lineItem:       [ { position: 10, importance: #HIGH } ],\r\n         selectionField: [ { position: 10 } ],\r\n         identification: [ { position: 10 }]}\r\n  //  @Search.defaultSearchElement: true\r\n  //  @Consumption.valueHelpDefinition: [ { entity: { name: 'I_CompanyCodeVH', element: 'CompanyCode' }}]\r\n  CompanyCode;\r\n  @UI: { lineItem:       [ { position: 20, importance: #HIGH } ],\r\n         selectionField: [ { position: 20 } ],\r\n         identification: [ { position: 20 }]}\r\n  Refrection1;\r\n  @UI: { lineItem:       [ { position: 30, importance: #HIGH } ],\r\n         selectionField: [ { position: 30 } ],\r\n         identification: [ { position: 30 }]}\r\n  @Consumption.valueHelpDefinition: [ { entity: { name: 'ZTAX_DDL_VH_VAT1_REFRECTION2', element: 'Refrection2' }}]\r\n\r\n  Refrection2;\r\n\r\n\r\n}"
+    "SOURCE":"@Metadata.layer: #CORE\r\n//@Search.searchable: true\r\n@UI:{\r\nheaderInfo:{\r\n                typeNamePlural: 'Alt Başlık',\r\n                typeName: 'Alt Başlık',\r\n                title:{ type: #STANDARD, label: 'Alt Başlık', value: 'Refrection1' }\r\n           }\r\n}\r\nannotate entity ZTAX_DDL_P_BRF_SUBHEAD with\r\n{\r\n  @UI.facet: [ { id:              'SubHead',\r\n                 purpose:         #STANDARD,\r\n                 type:            #IDENTIFICATION_REFERENCE,\r\n                 label:           'Başlık Bilgileri',\r\n                 position:        10 },\r\n\r\n               { id:              'Fieldgroup1-ID',\r\n                 purpose:         #STANDARD,\r\n                 position:        20 ,\r\n                 label:           'Düğüm',\r\n                 type:            #LINEITEM_REFERENCE,\r\n                 parentId:        'SubHead',\r\n                 targetQualifier: 'Fieldgroup1',\r\n                 targetElement:   '_Node' }\r\n                ]\r\n\r\n  @UI: { lineItem:       [ { position: 10, importance: #HIGH } ],\r\n         selectionField: [ { position: 10 } ],\r\n         identification: [ { position: 10 }]}\r\n  //  @Search.defaultSearchElement: true\r\n  //  @Consumption.valueHelpDefinition: [ { entity: { name: 'I_CompanyCodeVH', element: 'CompanyCode' }}]\r\n  CompanyCode;\r\n  @UI: { lineItem:       [ { position: 20, importance: #HIGH } ],\r\n         selectionField: [ { position: 20 } ],\r\n         identification: [ { position: 20 }]}\r\n  Refrection1;\r\n  @UI: { lineItem:       [ { position: 30, importance: #HIGH } ],\r\n         selectionField: [ { position: 30 } ],\r\n         identification: [ { position: 30 }]}\r\n  @Consumption.valueHelpDefinition: [ { entity: { name: 'ZTAX_DDL_VH_VAT1_REFRECTION2', element: 'Refrection2' }}]\r\n\r\n  Refrection2;\r\n}"
    }
   ]
  },
@@ -318,7 +318,7 @@
     "EXTENDED_ARTIFACT":"ZTAX_DDL_P_BRF_SUBHEAD",
     "VARIANT":"",
     "LAYER":1500,
-    "DT_UUID":"076F643A4AD31EEF9FF971555FD6E1F2",
+    "DT_UUID":"41DA9F4B20AC1EEFBEB60DEEB7D7C3C9",
     "RT_HASH":"7FDFAA9E2ADF5860262DF43265449B0F21144BD7",
     "GEN_VERSION":"0",
     "TYPE":"0"

@@ -7,9 +7,9 @@
     "SRVDNAME":"ZTAX_DDL_D_BRF_COMPANY_CODE",
     "VERSION":"A",
     "CHANGED_BY":"SAP_CUSTOMER",
-    "CHANGED_ON":"2024-10-01",
-    "CHANGED_AT":"08:14:30",
-    "DT_UUID":"076F643A4AD31EEF9FF9A5D8E1CD81F2",
+    "CHANGED_ON":"2025-03-05",
+    "CHANGED_AT":"10:32:10",
+    "DT_UUID":"41DA9F4B20AC1EEFBEB5A2F430AB63C9",
     "SOURCE_ORIGIN":"0",
     "SRVD_SOURCE_TYPE":"S",
     "ABAP_LANGUAGE_VERSION":"5"
@@ -35,7 +35,7 @@
    {
     "SRVDNAME":"ZTAX_DDL_D_BRF_COMPANY_CODE",
     "VERSION":"A",
-    "SOURCE":"@EndUserText.label: 'Muhtasar - Şirket Kodu Tablosu'\r\ndefine service ZTAX_DDL_D_BRF_COMPANY_CODE {\r\n  expose ZTAX_DDL_P_BRF_COMPANY_CODE as CompanyCode;\r\n  expose ZTAX_DDL_P_BRF_HEADER       as Header;\r\n  expose ZTAX_DDL_P_BRF_SUBHEAD      as Subhead;\r\n  expose ZTAX_DDL_P_BRF_NODE         as Node;\r\n}"
+    "SOURCE":"@EndUserText.label: 'Muhtasar - Şirket Kodu Tablosu'\r\ndefine service ZTAX_DDL_D_BRF_COMPANY_CODE {\r\n  expose ZTAX_DDL_P_BRF_COMPANY_CODE as CompanyCode;\r\n  expose ZTAX_DDL_P_BRF_HEADER       as Header;\r\n  expose ZTAX_DDL_P_BRF_SUBHEAD      as SubHead;\r\n  expose ZTAX_DDL_P_BRF_NODE         as Node;\r\n}"
    }
   ]
  },
@@ -99,7 +99,7 @@
     "EXPOSED_ARTIFACT":"ZTAX_DDL_P_BRF_SUBHEAD",
     "EXPOSED_ARTIFACT_TYPE":"E",
     "EXPOSED_ALIAS":"SUBHEAD",
-    "EXPOSED_ALIAS_RAW":"Subhead",
+    "EXPOSED_ALIAS_RAW":"SubHead",
     "INCL_SERVICE":""
    }
   ]
@@ -113,8 +113,8 @@
     "SERVICE":"ZTAX_DDL_D_BRF_COMPANY_CODE",
     "SERVICE_RAW":"ZTAX_DDL_D_BRF_COMPANY_CODE",
     "SOURCE_TYPE":"S",
-    "DT_UUID":"076F643A4AD31EEF9FF9A5D8E1CD81F2",
-    "RT_HASH":"344F595B54B74A4FEECF37D7FE413638283B7904",
+    "DT_UUID":"41DA9F4B20AC1EEFBEB5A2F430AB63C9",
+    "RT_HASH":"AACBDD10F6F86CF6CD305242AF8414DD4229A733",
     "GEN_VERSION":"0"
    }
   ]

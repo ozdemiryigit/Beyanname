@@ -17,7 +17,7 @@
    {
     "CLSNAME":"ZBP_TAX_DDL_I_BRF_COMPANY_CODE",
     "CLSTYPE":0,
-    "UUID":"B29kOkrTHu+f+bUBxlUB8g==",
+    "UUID":"QdqfSyCsHu++yseRQJvjyw==",
     "REMOTE":""
    }
   ]
@@ -34,7 +34,7 @@
     "STATE":1,
     "RELEASE":0,
     "AUTHOR":"",
-    "CREATEDON":"2024-10-01",
+    "CREATEDON":"2025-03-06",
     "CHANGEDBY":"",
     "CHANGEDON":"0000-00-00",
     "CHGDANYBY":"",
@@ -51,7 +51,7 @@
     "UNICODE":"5",
     "RSTAT":"",
     "CLSBCIMPL":"",
-    "R3RELEASE":"912",
+    "R3RELEASE":"914",
     "CLSBCTRANS":"",
     "CLSBCCAT":0,
     "CLSBCNODEL":"",
@@ -101,8 +101,8 @@
     "CRELEASE":"",
     "DELFLAG":"",
     "TRANSLTTXT":"",
-    "CREATED_ON":"2024-10-01",
-    "CHECK_DATE":"2024-10-01",
+    "CREATED_ON":"2025-03-06",
+    "CHECK_DATE":"2025-03-06",
     "CHECK_CFG":""
    }
   ]

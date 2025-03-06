@@ -7,9 +7,9 @@
     "DDLXNAME":"ZTAX_DDL_E_BRF_NODE",
     "VERSION":"A",
     "CHANGED_BY":"SAP_CUSTOMER",
-    "CHANGED_ON":"2024-10-01",
-    "CHANGED_AT":"08:05:32",
-    "UUID":"076F643A4AD31EEF9FF97DB43C2761F2",
+    "CHANGED_ON":"2025-02-26",
+    "CHANGED_AT":"11:07:47",
+    "UUID":"DD978388F9811EEFBD863D2033FEA3A4",
     "ABAP_LANGUAGE_VERSION":"5"
    }
   ]
@@ -34,7 +34,7 @@
     "DDLXNAME":"ZTAX_DDL_E_BRF_NODE",
     "VERSION":"A",
     "UUID":"",
-    "SOURCE":"@Metadata.layer: #CORE\r\n//@Search.searchable: true\r\n@UI:{\r\nheaderInfo:{\r\n                typeNamePlural: 'Düğüm',\r\n                typeName: 'Düğüm',\r\n                title:{ type: #STANDARD, label: 'Düğüm', value: 'Refrection2' }\r\n           }\r\n}\r\nannotate entity ZTAX_DDL_P_BRF_NODE with\r\n{\r\n  @UI.facet: [ { id:            'Parameters',\r\n                 purpose:       #STANDARD,\r\n                 type:          #IDENTIFICATION_REFERENCE,\r\n                 label:         'Düğüm',\r\n                 position:      10 } ]\r\n\r\n  @UI: { lineItem:       [ { position: 10, importance: #HIGH } ],\r\n         selectionField: [ { position: 10 } ],\r\n         identification: [ { position: 10 } ]}\r\n  //  @Search.defaultSearchElement: true\r\n  //  @Consumption.valueHelpDefinition: [ { entity: { name: 'I_CompanyCodeVH', element: 'CompanyCode' }}]\r\n  CompanyCode;\r\n  @UI: { lineItem:       [ { position: 20, importance: #HIGH } ],\r\n         selectionField: [ { position: 20 } ],\r\n         identification: [ { position: 20 } ]}\r\n  Refrection1;\r\n  @UI: { lineItem:       [ { position: 30, importance: #HIGH } ],\r\n         selectionField: [ { position: 30 } ],\r\n         identification: [ { position: 30 } ]}\r\n  Refrection2;\r\n  @UI: { lineItem:       [ { position: 40, importance: #HIGH } ],\r\n         selectionField: [ { position: 40 } ],\r\n         identification: [ { position: 40 } ]}\r\n  GLAccount;\r\n  @UI: { lineItem:       [ { position: 50, importance: #HIGH } ],\r\n         selectionField: [ { position: 50 } ],\r\n         identification: [ { position: 50 } ]}\r\n  MinorityIndicator;\r\n}"
+    "SOURCE":"@Metadata.layer: #CORE\r\n@Search.searchable: true\r\n@UI:{\r\nheaderInfo:{\r\n                typeNamePlural: 'Düğüm',\r\n                typeName: 'Düğüm',\r\n                title:{ type: #STANDARD, label: 'Düğüm', value: 'Refrection2' }\r\n           }\r\n}\r\nannotate entity ZTAX_DDL_P_BRF_NODE with\r\n{\r\n  @UI.facet: [ { id:            'Parameters',\r\n                 purpose:       #STANDARD,\r\n                 type:          #IDENTIFICATION_REFERENCE,\r\n                 label:         'Düğüm',\r\n                 position:      10 } ]\r\n\r\n  @UI: { lineItem:       [ { position: 10, importance: #HIGH } ],\r\n         selectionField: [ { position: 10 } ],\r\n         identification: [ { position: 10 } ]}\r\n    @Search.defaultSearchElement: true\r\n    @Consumption.valueHelpDefinition: [ { entity: { name: 'I_CompanyCodeVH', element: 'CompanyCode' }}]\r\n  CompanyCode;\r\n  @UI: { lineItem:       [ { position: 20, importance: #HIGH } ],\r\n         selectionField: [ { position: 20 } ],\r\n         identification: [ { position: 20 } ]}\r\n  Refrection1;\r\n  @UI: { lineItem:       [ { position: 30, importance: #HIGH } ],\r\n         selectionField: [ { position: 30 } ],\r\n         identification: [ { position: 30 } ]}\r\n  Refrection2;\r\n  @UI: { lineItem:       [ { position: 40, importance: #HIGH } ],\r\n         selectionField: [ { position: 40 } ],\r\n         identification: [ { position: 40 } ]}\r\n  GLAccount;\r\n  @UI: { lineItem:       [ { position: 50, importance: #HIGH } ],\r\n         selectionField: [ { position: 50 } ],\r\n         identification: [ { position: 50 } ]}\r\n  MinorityIndicator;\r\n}"
    }
   ]
  },
@@ -42,6 +42,13 @@
   "table":"DDLX_RT_DATA",
   "data":
   [
+   {
+    "DDLXNAME":"ZTAX_DDL_E_BRF_NODE",
+    "ELEMENT":"",
+    "NAME":"SEARCH.SEARCHABLE",
+    "ELEMENT_TYPE":"N",
+    "VALUE":"true"
+   },
    {
     "DDLXNAME":"ZTAX_DDL_E_BRF_NODE",
     "ELEMENT":"",
@@ -76,6 +83,27 @@
     "NAME":"UI.HEADERINFO.TYPENAMEPLURAL",
     "ELEMENT_TYPE":"N",
     "VALUE":"'Düğüm'"
+   },
+   {
+    "DDLXNAME":"ZTAX_DDL_E_BRF_NODE",
+    "ELEMENT":"COMPANYCODE",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY.ELEMENT",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"'CompanyCode'"
+   },
+   {
+    "DDLXNAME":"ZTAX_DDL_E_BRF_NODE",
+    "ELEMENT":"COMPANYCODE",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY.NAME",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"'I_CompanyCodeVH'"
+   },
+   {
+    "DDLXNAME":"ZTAX_DDL_E_BRF_NODE",
+    "ELEMENT":"COMPANYCODE",
+    "NAME":"SEARCH.DEFAULTSEARCHELEMENT",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"true"
    },
    {
     "DDLXNAME":"ZTAX_DDL_E_BRF_NODE",
@@ -297,8 +325,8 @@
     "EXTENDED_ARTIFACT":"ZTAX_DDL_P_BRF_NODE",
     "VARIANT":"",
     "LAYER":1500,
-    "DT_UUID":"076F643A4AD31EEF9FF97DB43C2761F2",
-    "RT_HASH":"C9949C31B494E6DD850684017E43A032742D5F32",
+    "DT_UUID":"DD978388F9811EEFBD863D2033FEA3A4",
+    "RT_HASH":"1862E727287AAA061644789544A6D944C9DC187F",
     "GEN_VERSION":"0",
     "TYPE":"0"
    }
@@ -317,6 +345,16 @@
     "REF_OBJECT_SUBTYPE":"DOF",
     "REF_OBJECT_NAME":"ZTAX_DDL_P_BRF_NODE",
     "REF_OBJECT_ELEMENT":"REFRECTION2"
+   },
+   {
+    "DDLXNAME":"ZTAX_DDL_E_BRF_NODE",
+    "ELEMENT":"COMPANYCODE",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY.NAME",
+    "PATH":"I_COMPANYCODEVH",
+    "REF_OBJECT_TYPE":"STOB",
+    "REF_OBJECT_SUBTYPE":"DO",
+    "REF_OBJECT_NAME":"I_COMPANYCODEVH",
+    "REF_OBJECT_ELEMENT":""
    }
   ]
  },

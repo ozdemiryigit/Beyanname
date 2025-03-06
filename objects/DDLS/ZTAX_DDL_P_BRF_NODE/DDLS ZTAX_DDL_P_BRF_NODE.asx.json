@@ -9,10 +9,10 @@
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"0000-00-00",
     "AS4TIME":"00:00:00",
-    "SOURCE":"@AccessControl.authorizationCheck: #NOT_REQUIRED\r\n@EndUserText.label: 'Muhtasar - Düğüm'\r\n@Metadata.ignorePropagatedAnnotations: true\r\n@Metadata.allowExtensions: true\r\n@ObjectModel.usageType:{\r\n    serviceQuality: #X,\r\n    sizeCategory: #S,\r\n    dataClass: #MIXED\r\n}\r\ndefine view entity ZTAX_DDL_P_BRF_NODE\r\n  as projection on ZTAX_DDL_I_BRF_NODE\r\n{\r\nkey CompanyCode,\r\nkey Refrection1,\r\nkey Refrection2,\r\nkey GLAccount,\r\nkey MinorityIndicator,\r\n/* Associations */\r\n_CompanyCodes: redirected to ZTAX_DDL_P_BRF_COMPANY_CODE,\r\n_SubHead : redirected to parent ZTAX_DDL_P_BRF_SUBHEAD\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZTAX_DDL_I_BRF_NODE\"\n],\n\"ASSOCIATED\":\n[\n\"ZTAX_DDL_I_BRF_COMPANY_CODE\",\n\"ZTAX_DDL_I_BRF_SUBHEAD\",\n\"ZTAX_DDL_P_BRF_COMPANY_CODE\",\n\"ZTAX_DDL_P_BRF_SUBHEAD\"\n],\n\"BASE\":\n[\n\"ZTAX_DDL_I_BRF_NODE\"\n],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
+    "SOURCE":"@AccessControl.authorizationCheck: #NOT_REQUIRED\r\n@EndUserText.label: 'Muhtasar - Düğüm'\r\n@Metadata.ignorePropagatedAnnotations: true\r\n@Metadata.allowExtensions: true\r\n@ObjectModel.usageType:{\r\n    serviceQuality: #X,\r\n    sizeCategory: #S,\r\n    dataClass: #MIXED\r\n}\r\ndefine view entity ZTAX_DDL_P_BRF_NODE\r\n  as projection on ZTAX_DDL_I_BRF_NODE\r\n{\r\nkey CompanyCode,\r\nkey Refrection1,\r\nkey Refrection2,\r\nkey GLAccount,\r\nkey MinorityIndicator,\r\n/* Associations */\r\n_SubHead : redirected to parent ZTAX_DDL_P_BRF_SUBHEAD,\r\n_CompanyCodes: redirected to ZTAX_DDL_P_BRF_COMPANY_CODE\r\n//: redirected to composition child ZTAX_DDL_I_BRF_COMPANY_CODE \r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZTAX_DDL_I_BRF_NODE\"\n],\n\"ASSOCIATED\":\n[\n\"ZTAX_DDL_I_BRF_COMPANY_CODE\",\n\"ZTAX_DDL_I_BRF_SUBHEAD\",\n\"ZTAX_DDL_P_BRF_COMPANY_CODE\",\n\"ZTAX_DDL_P_BRF_SUBHEAD\"\n],\n\"BASE\":\n[\n\"ZTAX_DDL_I_BRF_NODE\"\n],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
     "PARENTNAME":"",
     "ACTFLAG":"",
-    "CHGFLAG":"WYD",
+    "CHGFLAG":"",
     "SOURCE_TYPE":"P",
     "SOURCE_ORIGIN":"0",
     "ABAP_LANGUAGE_VERSION":"5"

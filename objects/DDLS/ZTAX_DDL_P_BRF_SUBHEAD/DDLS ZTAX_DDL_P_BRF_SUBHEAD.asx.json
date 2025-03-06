@@ -9,10 +9,10 @@
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"0000-00-00",
     "AS4TIME":"00:00:00",
-    "SOURCE":"@AccessControl.authorizationCheck: #NOT_REQUIRED\r\n@EndUserText.label: 'Muhtasar - Alt Başlık'\r\n@Metadata.ignorePropagatedAnnotations: true\r\n@Metadata.allowExtensions: true\r\n@ObjectModel.usageType:{\r\n    serviceQuality: #X,\r\n    sizeCategory: #S,\r\n    dataClass: #MIXED\r\n}\r\ndefine view entity ZTAX_DDL_P_BRF_SUBHEAD\r\n  as projection on ZTAX_DDL_I_BRF_SUBHEAD\r\n{\r\n  key CompanyCode,\r\n  key Refrection1,\r\n  key Refrection2,\r\n      /* Associations */\r\n      _CompanyCodes : redirected to ZTAX_DDL_P_BRF_COMPANY_CODE,\r\n      _Header       : redirected to parent ZTAX_DDL_P_BRF_HEADER,\r\n      _Node         : redirected to composition child ZTAX_DDL_P_BRF_NODE\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZTAX_DDL_I_BRF_SUBHEAD\"\n],\n\"ASSOCIATED\":\n[\n\"ZTAX_DDL_I_BRF_COMPANY_CODE\",\n\"ZTAX_DDL_I_BRF_HEADER\",\n\"ZTAX_DDL_I_BRF_NODE\",\n\"ZTAX_DDL_P_BRF_COMPANY_CODE\",\n\"ZTAX_DDL_P_BRF_HEADER\",\n\"ZTAX_DDL_P_BRF_NODE\"\n],\n\"BASE\":\n[\n\"ZTAX_DDL_I_BRF_SUBHEAD\"\n],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
+    "SOURCE":"@AccessControl.authorizationCheck: #NOT_REQUIRED\r\n@EndUserText.label: 'Muhtasar - Alt Başlık'\r\n@Metadata.ignorePropagatedAnnotations: true\r\n@Metadata.allowExtensions: true\r\n@ObjectModel.usageType:{\r\n    serviceQuality: #X,\r\n    sizeCategory: #S,\r\n    dataClass: #MIXED\r\n}\r\ndefine view entity ZTAX_DDL_P_BRF_SUBHEAD\r\n  as projection on ZTAX_DDL_I_BRF_SUBHEAD\r\n{\r\n  key CompanyCode,\r\n  key Refrection1,\r\n  key Refrection2,\r\n      /* Associations */\r\n      _Header       : redirected to parent ZTAX_DDL_P_BRF_HEADER,\r\n      _CompanyCodes : redirected to ZTAX_DDL_P_BRF_COMPANY_CODE,\r\n      _Node         : redirected to composition child ZTAX_DDL_P_BRF_NODE\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZTAX_DDL_I_BRF_SUBHEAD\"\n],\n\"ASSOCIATED\":\n[\n\"ZTAX_DDL_I_BRF_COMPANY_CODE\",\n\"ZTAX_DDL_I_BRF_HEADER\",\n\"ZTAX_DDL_I_BRF_NODE\",\n\"ZTAX_DDL_P_BRF_COMPANY_CODE\",\n\"ZTAX_DDL_P_BRF_HEADER\",\n\"ZTAX_DDL_P_BRF_NODE\"\n],\n\"BASE\":\n[\n\"ZTAX_DDL_I_BRF_SUBHEAD\"\n],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
     "PARENTNAME":"",
     "ACTFLAG":"",
-    "CHGFLAG":"J,T429Z",
+    "CHGFLAG":"",
     "SOURCE_TYPE":"P",
     "SOURCE_ORIGIN":"0",
     "ABAP_LANGUAGE_VERSION":"5"

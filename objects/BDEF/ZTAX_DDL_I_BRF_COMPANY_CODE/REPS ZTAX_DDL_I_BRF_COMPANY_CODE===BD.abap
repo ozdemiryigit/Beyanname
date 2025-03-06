@@ -1,5 +1,5 @@
 managed implementation in class zbp_tax_ddl_i_brf_company_code unique;
-strict ( 2 );
+//strict ( 1 );
 
 define behavior for ZTAX_DDL_I_BRF_COMPANY_CODE //alias <alias_name>
 persistent table ztax_t_ms
@@ -11,7 +11,7 @@ authorization master ( instance )
   update;
   delete;
   field ( readonly: update ) CompanyCode;
-  association _Header { create; }
+//  association _Header { create; }
 
   mapping for ztax_t_ms{
   CompanyCode = bukrs;
@@ -46,11 +46,12 @@ authorization dependent by _CompanyCodes
   update;
   delete;
   field ( readonly: update ) CompanyCode, Refrection1, Refrection2;
-  association _CompanyCodes;
   association _Header;
   association _Node { create; }
+  association _CompanyCodes;
 
-  mapping for ztax_t_mk2s{
+  mapping for ztax_t_mk2s
+  {
   CompanyCode = bukrs;
   Refrection1 = kiril1;
   Refrection2 = kiril2;
@@ -65,9 +66,9 @@ authorization dependent by _CompanyCodes
 {
   update;
   delete;
-  field ( readonly: update ) CompanyCode, Refrection1, Refrection2, GLAccount, MinorityIndicator;
+  field ( readonly: update ) CompanyCode, Refrection1, Refrection2, GLAccount, MinorityIndicator ;
+  association _SubHead ;
   association _CompanyCodes;
-  association _SubHead;
 
   mapping for ztax_t_mg{
   CompanyCode = bukrs;
